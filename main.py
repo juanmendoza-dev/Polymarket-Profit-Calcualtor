@@ -11,15 +11,16 @@ yes_or_no = input("Yes or No, Contract?: ")
 capital = input("Capital (initial invesment): ")
 
 
-#logic (where the magic happens)
+#brains (where everything )
 
 #yes or no contract logic
-if yes_or_no == "no" or  yes_or_no == "N":
-   yes_or_no == False
-elif yes_or_no == "yes" or yes_or_no == "Y":
-   yes_or_no == True
-else:
-   print("invalid operator")
+while True:
+    if yes_or_no == "no" or  yes_or_no == "N":
+        yes_or_no == False
+    elif yes_or_no == "yes" or yes_or_no == "Y":
+        yes_or_no == True
+    else:
+        print("invalid operator")
 
 #contract price logic 
 while True:
