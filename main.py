@@ -21,8 +21,13 @@ elif yes_or_no == "yes" or yes_or_no == "Y":
 else:
    print("invalid operator")
 
-if yes_or_no == True:
-   yes == input('price per "yes" contract: ')
-else:
-   no == input('price per "no" contract: ')
-
+#contract price logic 
+while True:
+    if yes_or_no == True:
+        yes == input('price per "yes" contract: ')
+        break
+    elif yes_or_no == False:
+        no == input('price per "no" contract: ')
+        break
+    else:
+        print('invalid "yes" or "no" contract price unit! Try again!')
