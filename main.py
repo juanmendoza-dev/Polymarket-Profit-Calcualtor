@@ -6,29 +6,31 @@ import math
 yes = 0
 no = 0
 
-#question/setup var
+#launcher/ inital questions
 yes_or_no = input("Yes or No, Contract?: ") 
 capital = input("Capital (initial invesment): ")
 
 
-#brains (where everything )
 
 #yes or no contract logic
-while True:
-    if yes_or_no == "no" or  yes_or_no == "N":
-        yes_or_no == False
-    elif yes_or_no == "yes" or yes_or_no == "Y":
-        yes_or_no == True
-    else:
-        print("invalid operator")
+
+def contract():
+    while True:
+        if yes_or_no == "no" or  yes_or_no == "N":
+            yes_or_no == False
+        elif yes_or_no == "yes" or yes_or_no == "Y":
+            yes_or_no == True
+        else:
+            print("invalid operator")
 
 #contract price logic 
-while True:
-    if yes_or_no == True:
-        yes == input('price per "yes" contract: ')
-        break
-    elif yes_or_no == False:
-        no == input('price per "no" contract: ')
-        break
-    else:
-        print('invalid "yes" or "no" contract price unit! Try again!')
+def contract_Price():
+    while True:
+        if yes_or_no == True:
+            yes == input('price per "yes" contract: ')
+            break
+        elif yes_or_no == False:
+            no == input('price per "no" contract: ')
+            break
+        else:
+            print('invalid "yes" or "no" contract price unit! Try again!')
