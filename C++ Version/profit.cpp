@@ -5,6 +5,7 @@ int main(){
     //vars
     bool capital; //how much money the user puts in, AKA capital 
     std::string yes_no_contract; //the contract
+    bool perShare;
 
 
     //launcher
@@ -16,7 +17,7 @@ int main(){
     
     // Figures out if the contract is a "Yes" or "No" 
     if (yes_no_contract == "Yes"|| yes_no_contract == "YES" || yes_no_contract == "y" || yes_no_contract == "Y"){
-       std::string yes_no_contract = "Yes"
+       std::string yes_no_contract = "Yes";
        
     }
     
@@ -28,8 +29,15 @@ int main(){
         std::cout << "Invaild Please Try again!";
     }
 
+    //per share
+    std::cout << "How Much per " << yes_no_contract <<" contract/share?"; // How much per {yes or no contract} contract?
+    std::cin >> perShare;
 
-
+    //safety rails 
+    if (perShare > capital){
+        std::cout << "Too much money, Must depoist more money!";
+    }
+    else if (perShare == capital)
 
     return 0; //goodbye!
 }
