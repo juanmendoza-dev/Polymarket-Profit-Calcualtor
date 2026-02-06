@@ -4,9 +4,10 @@
 #include <iostream>
 
 int main(){
+    //vars
+    bool capital; //how much money the user puts in, AKA capital 
+    std::string yes_no_contract; //the contract
 
-    bool capital;
-    std::string yes_no_contract;
 
     //launcher
     std::cout << "Inital Capital?: "; //inital capital 
@@ -15,6 +16,7 @@ int main(){
     std::cout << "Purchased 'Yes' or 'No' Contract?: "; //figures out if the user bought yes or no contract!
     std::cin >> yes_no_contract;
     
+    // Figures out if the contract is a "Yes" or "No" 
     if (yes_no_contract == "Yes"|| yes_no_contract == "YES" || yes_no_contract == "y" || yes_no_contract == "Y"){
        int yes_no_contract = 0; //makes the var into a "Yes" contract
        
@@ -27,6 +29,7 @@ int main(){
     else{
         std::cout << "Invaild Please Try again!";
     }
+
 
 
 
