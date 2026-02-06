@@ -47,3 +47,23 @@ The C++ version is meant to be the **fast and efficient**.
 - Batch calculations  
 
 ---
+
+## Python Version
+
+The Python version is for a more user friendly design
+
+### What Python Is For
+
+- Prototyping ideas  
+- Testing math and logic  
+- Trying different strategies  
+- Running small simulations  
+
+### Planned Ideas
+
+- Basic profit calculator  
+- Share and payout math  
+- Expected value (EV) checks  
+- Simple strategy testing  
+- Price vs profit experiments  
+
