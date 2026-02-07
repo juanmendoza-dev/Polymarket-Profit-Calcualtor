@@ -4,6 +4,9 @@
 
 int main(){
 
+    
+    int logNumber;
+    std::string log;
 
 
 return 0;
