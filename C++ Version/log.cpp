@@ -4,9 +4,9 @@
 
 int main(){
 
-    
-    int logNumber;
-    std::string log;
+    //Global Var
+    int logNumber; //amount of logs coming in
+    std::string log; // each specific log
 
 
 return 0;
