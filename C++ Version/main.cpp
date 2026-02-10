@@ -1,12 +1,10 @@
 #include <iostream>
-#include <cmath>
 #include <string>
 using std::cout;
 
 int main(){
     //global vars
     std::string selection;
-    double capital;
 
 
 
@@ -20,7 +18,7 @@ int main(){
     cout << "Choose Selection: "; //user selection
     std::cin >> selection; 
     
-
+    
 
 
   
