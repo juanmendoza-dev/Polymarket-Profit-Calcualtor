@@ -49,6 +49,7 @@ int main(){
     }
 
     //actual logic (summary + analysis)
+    std::cout << "------------------------------------------" << "\n"; //makes output look cleaner
     std::cout << "Contract Type: " << '"' << yes_no_contract << '"' << "Contract" << "\n"; //Contract type: {yes_no_contract} Contract
     std::cout << "Contract Buys: " << share << "\n"; // Contract buys: {share}
     std::cout << "Contract Price: " << perShare; //Contract Price: {perShare}
