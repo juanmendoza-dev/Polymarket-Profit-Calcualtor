@@ -2,6 +2,25 @@
 #include <iostream>
 #include <string> 
 
+void Risk(){
+
+    
+}
+
+enum Color{
+    RED = 91,
+    GREEN = 92,
+    YELLOW = 93,
+    BLUE = 94,
+    RESET = 0
+};
+
+// Overload << so we can use Color directly
+std::ostream& operator<<(std::ostream& os, Color color) {
+    return os << "\033[" << static_cast<int>(color) << "m";
+}
+
+
 int main(){
     //vars
     double capital; //how much money the user puts in, AKA capital 
@@ -10,14 +29,14 @@ int main(){
     int share;
 
 
-    //launcher
+    //questions
     std::cout << "Inital Capital?: "; //inital capital 
     std::cin >> capital;
 
     std::cout << "Purchased 'Yes' or 'No' Contract?: "; //figures out if the user bought yes or no contract!
     std::cin >> yes_no_contract;
 
-    std::cout << "How many " << yes_no_contract << " did you purchase?: " << "\n";
+    std::cout << "How many " << yes_no_contract << " did you purchase?: ";
     std::cin >> share;
     
     // Figures out if the contract is a "Yes" or "No" 
@@ -50,7 +69,8 @@ int main(){
 
     //actual logic (summary + analysis)
     std::cout << "------------------------------------------" << "\n"; //makes output look cleaner
-    std::cout << "Contract Type: " << '"' << yes_no_contract << '"' << "Contract" << "\n"; //Contract type: {yes_no_contract} Contract
+    std::cout << "Summary: " << "\n";
+    std::cout << "Contract Type: " << '"' << yes_no_contract <<'"'<< " Contract" << "\n"; //Contract type: {yes_no_contract} Contract
     std::cout << "Contract Buys: " << share << "\n"; // Contract buys: {share}
     std::cout << "Contract Price: " << perShare; //Contract Price: {perShare}
     //risk goes here!
@@ -60,16 +80,8 @@ int main(){
     return 0; //goodbye!
 }
 
-void Risk(){
-
-    
 
 
-
-
-
-
-}
 
 
 
