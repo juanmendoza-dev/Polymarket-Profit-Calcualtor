@@ -21,7 +21,7 @@ void runRiskAnalyzer(){
     cout << "Total Capital: ";
     cin >> capital;
 
-    //clear buffer
+    //clear buffer (step 1.2)
     cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
 

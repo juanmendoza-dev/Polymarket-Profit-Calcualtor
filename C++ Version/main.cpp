@@ -25,6 +25,23 @@ int main(){
     }
     
 
+    /*
+    else if (selection == "2" || selection == "two"){
+
+        
+
+
+    }
+    */
+    
+    else if (selection == "3" || selection == "three"){
+        cout << "Exiting..."
+
+
+
+
+    }
+        
 
   
 
