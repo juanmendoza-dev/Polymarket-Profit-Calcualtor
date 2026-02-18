@@ -35,7 +35,8 @@ int main(){
     */
     
     else if (selection == "3" || selection == "three"){
-        cout << "Exiting..."
+        cout << "Exiting...";
+        
 
 
 
